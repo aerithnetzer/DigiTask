@@ -10,7 +10,7 @@ logger = loguru.logger
 
 
 class ImageTask(FiretaskBase):
-    _fw_name = "Image Task"
+    _fw_name = "digitask.ImageTask"
 
     def run_task(self, fw_spec):
         input_directory = Path(fw_spec["barcode_dir"])
@@ -51,7 +51,7 @@ class ImageTask(FiretaskBase):
 
 
 class ImageToPDFTask(FiretaskBase):
-    _fw_name = "Image To PDF Task"
+    _fw_name = "digitask.ImageTask"
 
     def run_task(self, fw_spec):
         jpg_files = sorted(fw_spec["_jpg_files"])
