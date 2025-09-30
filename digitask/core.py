@@ -79,7 +79,7 @@ class ImageToPDFTask(FiretaskBase):
 
 
 class MarkerTask(FiretaskBase):
-    _fw_name = "Marker Task"
+    _fw_name = "digitas.MarkerTask"
 
     def run_task(self, fw_spec):
         jpg_files = sorted(fw_spec["_jpg_files"])
