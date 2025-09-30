@@ -51,7 +51,7 @@ class ImageTask(FiretaskBase):
 
 
 class ImageToPDFTask(FiretaskBase):
-    _fw_name = "digitask.ImageTask"
+    _fw_name = "digitask.ImageToPDFTask"
 
     def run_task(self, fw_spec):
         jpg_files = sorted(fw_spec["_jpg_files"])
